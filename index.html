@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>الحضارة المصرية</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            user-select: none; /* يمنع النسخ */
+            direction: rtl;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 80px;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1, h2, p {
+            text-align: center;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+
+        h1:hover, h2:hover, p:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* يمنع التحريك يمين أو يسار */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        .contact-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 120px 10px 50px;
+                padding: 15px;
+            }
+
+            .contact-button {
+                width: 150px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">الحضارة المصرية</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pyramids">الأهرامات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pharaohs">الفراعنة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#temples">المعابد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">تواصل معنا</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="container" data-aos="fade-up">
+        <h1>الحضارة المصرية القديمة</h1>
+        <p>كانت مصر القديمة واحدة من أقدم الحضارات وأكثرها تأثيرًا في التاريخ البشري. ازدهرت هذه الحضارة على ضفاف نهر النيل واستمرت لآلاف السنين.</p>
+        <img src="download (1).jpg" alt="الأهرامات">
+    </div>
+
+    <div id="pyramids" class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>الأهرامات</h2>
+        <p>تعتبر الأهرامات المصرية من أهم الإنجازات المعمارية في تاريخ البشرية. بنيت هذه الهياكل الضخمة كمقابر للفراعنة وهي تعكس القدرة الهندسية للمصريين القدماء.</p>
+        <img src="download (2).jpg" alt="الأهرامات">
+    </div>
+
+    <div id="pharaohs" class="container" data-aos="fade-up" data-aos-delay="200">
+        <h2>الفراعنة</h2>
+        <p>حكم الفراعنة مصر القديمة وتركوا إرثًا كبيرًا من الثقافة والفنون والعمارة. كانوا يعتبرون آلهة على الأرض وكان لهم تأثير كبير على الحياة اليومية للمصريين.</p>
+        <img src="أسماء_ملوك_الفراعنة.jpg" alt="الفراعنة">
+    </div>
+
+    <div id="temples" class="container" data-aos="fade-up" data-aos-delay="300">
+        <h2>المعابد</h2>
+        <p>شيد المصريون القدماء العديد من المعابد الرائعة التي كانت تستخدم للعبادة والتقرب من الآلهة. هذه المعابد تتميز بتصميماتها الفريدة وزخارفها المعقدة.</p>
+        <img src="19_2021-637714599249094241-909.jpeg" alt="المعابد">
+    </div>
+
+    <div id="contact" class="container" data-aos="fade-up" data-aos-delay="400">
+        <a class="contact-button" href="https://hmhamdi.github.io/hm8/?fbclid=IwZXh0bgNhZW0CMTAAAR1K13MxLB8qzE_U6Ug3wsW-u4w42kDwTECtiBNEJUKI4-2pAUtH9Uhh514_aem_ATYAW7-I-_pB--Cc5qJb7rQRgzKzaGRq9jMcsTF0Sge1ONkJeHDTLasEgnpNwgibN1IEWk6MjwRxHN9E8QoHH3PB">تواصل مع صانع الموقع</a>
+    </div>
+
+    <footer>
+        © 2024 الحضارة المصرية. جميع الحقوق محفوظة.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
